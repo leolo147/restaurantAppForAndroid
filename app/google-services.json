@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "159599718923",
+    "project_id": "restaurantapp-93b71",
+    "storage_bucket": "restaurantapp-93b71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159599718923:android:a035c36882497c225e8d0e",
+        "android_client_info": {
+          "package_name": "com.leolo.restaurantapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159599718923-rdonc47obqgmo9bk0pmknigofnai2p6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leolo.restaurantapp",
+            "certificate_hash": "8c13bc327ef6d354a366176a502aab24afba6a10"
+          }
+        },
+        {
+          "client_id": "159599718923-psjcl8f8lqvir6taie2phcrrpinl8990.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM92yzOB2mEwJLn_fcqHqDTA1UorDLnSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159599718923-psjcl8f8lqvir6taie2phcrrpinl8990.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
