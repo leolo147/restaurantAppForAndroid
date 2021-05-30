@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,9 +13,14 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.ValueEventListener;
 import com.leolo.restaurantapp.API.APIClient;
 import com.leolo.restaurantapp.API.APIInterface;
 import com.leolo.restaurantapp.API.restaurants;
+import com.leolo.restaurantapp.FirebaseDao.DaoRestaurant;
+import com.leolo.restaurantapp.FirebaseModel.Restaurants;
 import com.leolo.restaurantapp.adapter.AsiaFoodAdapter;
 import com.leolo.restaurantapp.adapter.GlobalVariable;
 import com.leolo.restaurantapp.adapter.PopularFoodAdapter;
@@ -34,6 +40,7 @@ public class HomeFragment extends Fragment {
     PopularFoodAdapter popularFoodAdapter;
     AsiaFoodAdapter asiaFoodAdapter;
     GlobalVariable gv;
+    DaoRestaurant daoRestaurant;
 
     @Nullable
     @Override
@@ -46,6 +53,8 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         gv = (GlobalVariable)getActivity().getApplicationContext();
+
+        daoRestaurant = new DaoRestaurant();
 
         Log.d("testleolo: ",gv.getToken()+"");
 
@@ -63,25 +72,49 @@ public class HomeFragment extends Fragment {
 
         List<AsiaFood> asiaFoodList = new ArrayList<>();
 
-        APIInterface apiInterface = APIClient.getClient().create(APIInterface.class);
+//        APIInterface apiInterface = APIClient.getClient().create(APIInterface.class);
+//
+//        Call<restaurants> call = apiInterface.getAllRestaurant();
+//        call.enqueue(new Callback<restaurants>() {
+//            @Override
+//            public void onResponse(Call<restaurants> call, Response<restaurants> response) {
+//                for(restaurants.rerestaurant rerestaurant : response.body().restaurants) {
+//                    Log.d("TAG123",rerestaurant.restaurant_name+"");
+//                    asiaFoodList.add(new AsiaFood(rerestaurant.restaurant_name, rerestaurant.district, rerestaurant.phone, rerestaurant.imgUrl, rerestaurant.full_address, rerestaurant.id));
+//                }
+//                setAsiaRecycler(asiaFoodList,view);
+//            }
+//
+//            @Override
+//            public void onFailure(Call<restaurants> call, Throwable t) {
+//                Log.d("fail","leolo123"+ t.getMessage());
+//                call.cancel();
+//            }
+//        });
 
-        Call<restaurants> call = apiInterface.getAllRestaurant();
-        call.enqueue(new Callback<restaurants>() {
+//        addRestaurant();
+
+        daoRestaurant.get().addValueEventListener(new ValueEventListener() {
             @Override
-            public void onResponse(Call<restaurants> call, Response<restaurants> response) {
-                for(restaurants.rerestaurant rerestaurant : response.body().restaurants) {
-                    Log.d("TAG123",rerestaurant.restaurant_name+"");
-                    asiaFoodList.add(new AsiaFood(rerestaurant.restaurant_name, rerestaurant.district, rerestaurant.phone, rerestaurant.imgUrl, rerestaurant.full_address, rerestaurant.id));
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot data : snapshot.getChildren()){
+                    Restaurants restaurant = data.getValue(Restaurants.class);
+                    Log.d("fail",restaurant.getRestaurant_name());
+                    asiaFoodList.add(new AsiaFood(restaurant.getRestaurant_name(), restaurant.getDistrict(), restaurant.getPhone(), restaurant.getImgUrl(), restaurant.getFull_address(),data.getKey()));
                 }
                 setAsiaRecycler(asiaFoodList,view);
             }
 
             @Override
-            public void onFailure(Call<restaurants> call, Throwable t) {
-                Log.d("fail","leolo123"+ t.getMessage());
-                call.cancel();
+            public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
+
+
+
+
+
 
         Log.d("paul",asiaFoodList.toString());
 
@@ -106,5 +139,15 @@ public class HomeFragment extends Fragment {
         asiaFoodAdapter = new AsiaFoodAdapter(getContext(), asiaFoodList);
         asiaRecycler.setAdapter(asiaFoodAdapter);
 
+    }
+
+    private void addRestaurant(){
+        Restaurants restaurant = new Restaurants("18樓雞煲火鍋專門店","荃灣","荃灣眾安街55號大鴻輝(荃灣)中心18樓",
+                23905390,"https://static5.orstatic.com/userphoto2/photo/Y/RLM/05G9T8522609DC5478BFA9px.jpg");
+        daoRestaurant.add(restaurant).addOnSuccessListener(suc ->{
+            Log.d("paul","successful");
+        }).addOnFailureListener(er->{
+            Log.d("paul",er.getMessage());
+        });
     }
 }

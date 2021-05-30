@@ -9,17 +9,19 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 import com.leolo.restaurantapp.API.APIClient;
 import com.leolo.restaurantapp.API.APIInterface;
-import com.leolo.restaurantapp.API.CreateUserResponse;
-import com.leolo.restaurantapp.API.User;
+import com.leolo.restaurantapp.FirebaseModel.FdUser;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -28,12 +30,15 @@ public class SignUpActivity extends AppCompatActivity {
     APIInterface apiInterface;
     EditText passwordEditText, userNameEditText, emailEditText;
 
+    private FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         apiInterface = APIClient.getClient().create(APIInterface.class);
+        mAuth = FirebaseAuth.getInstance();
 
         signIn = findViewById(R.id.sign_up);
         btnSignUp = findViewById(R.id.btnSignUp);
@@ -70,33 +75,7 @@ public class SignUpActivity extends AppCompatActivity {
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = userNameEditText.getText().toString();
-                String password = passwordEditText.getText().toString();
-                String email = emailEditText.getText().toString();
-
-                System.out.println("username password email"+username + password + email);
-                if(username.equals("")){ ToastMessage("Please fill in username"); return;}
-                if(password.equals("")){ ToastMessage("Please fill in password"); return;}
-                if(email.equals("")){ ToastMessage("Please fill in email"); return;}
-
-                User user = new User(username, email,password);
-                Call<CreateUserResponse> call1 = apiInterface.createUser(user);
-                call1.enqueue(new Callback<CreateUserResponse>() {
-                    @Override
-                    public void onResponse(Call<CreateUserResponse> call, Response<CreateUserResponse> response) {
-                        CreateUserResponse user1 = response.body();
-
-                        ToastMessage(user1.message);
-                        Intent i = new Intent(SignUpActivity.this,MainActivity.class) ;
-                        startActivity(i);
-                    }
-
-                    @Override
-                    public void onFailure(Call<CreateUserResponse> call, Throwable t) {
-                        call.cancel();
-                        ToastMessage(t.getMessage());
-                    }
-                });
+                registerUser();
             }
         });
 
@@ -104,5 +83,41 @@ public class SignUpActivity extends AppCompatActivity {
 
     public void ToastMessage(String message){
         Toast.makeText(SignUpActivity.this, message, Toast.LENGTH_SHORT).show();
+    }
+
+    private  void registerUser(){
+        String username = userNameEditText.getText().toString();
+        String password = passwordEditText.getText().toString();
+        String email = emailEditText.getText().toString();
+
+        System.out.println("username password email"+username + password + email);
+        if(username.equals("")){ ToastMessage("Please fill in username"); return;}
+        if(password.equals("")){ ToastMessage("Please fill in password"); return;}
+        if(email.equals("")){ ToastMessage("Please fill in email"); return;}
+
+        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    FdUser user = new FdUser(username,email);
+
+                    FirebaseDatabase.getInstance().getReference("Users")
+                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                            .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if(task.isSuccessful()){
+                                ToastMessage("User has been registered successfully");
+                            }else{
+                                ToastMessage("Failed to register! Try again!");
+                            }
+                        }
+                    });
+
+                }else{
+                    ToastMessage("Failed to register! Try again!");
+                }
+            }
+        });
     }
 }

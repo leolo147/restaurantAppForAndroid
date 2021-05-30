@@ -15,6 +15,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -32,6 +37,10 @@ public class LoginFragment extends Fragment {
     APIInterface apiInterface;
     EditText userNameEditText, passwordEditText;
     GlobalVariable gv;
+    FirebaseAuth mAuth;
+    FirebaseUser user;
+    DatabaseReference reference;
+    private String userID;
 
     @Nullable
     @Override
@@ -44,6 +53,7 @@ public class LoginFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         apiInterface = APIClient.getClient().create(APIInterface.class);
         gv = (GlobalVariable)getActivity().getApplicationContext();
+        mAuth = FirebaseAuth.getInstance();
 
         signUp = view.findViewById(R.id.sign_up);
         btnLogin = view.findViewById(R.id.btnLogin);
@@ -65,59 +75,54 @@ public class LoginFragment extends Fragment {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = userNameEditText.getText().toString();
-                String password = passwordEditText.getText().toString();
-//                if(username.equals("")){ ToastMessage("Please fill in username"); return;}
-//                if(password.equals("")){ ToastMessage("Please fill in password"); return;}
-
-                table_user.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                        if(snapshot.child("leolo159").exists()){
-                            Log.e("fa","exist");
-                        }else{
-                            Log.e("fa","fuck");
-                        }
-
-                        FdUser fdUser = snapshot.child("leolo159").getValue(FdUser.class);
-                        if(fdUser.getPassword().equals(password)){
-                            Intent i = new Intent(getActivity(),MainActivity.class) ;
-                            startActivity(i);
-                        }
-                        Log.e("getfuck",snapshot.child("leolo159").getValue().toString());
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
-
-
-
-//                Login login = new Login(username, password);
-//                Call<LoginResponse> call1 = apiInterface.loginUser(login);
-//                call1.enqueue(new Callback<LoginResponse>() {
-//                    @Override
-//                    public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
-//                        LoginResponse user = response.body();
-//                        gv.setLogin(true);
-//                        gv.setToken(user.accessToken);
-//                        gv.setUsername(user.username);
-//                        Intent i = new Intent(getActivity(),MainActivity.class) ;
-//                        startActivity(i);
-//                    }
-//
-//                    @Override
-//                    public void onFailure(Call<LoginResponse> call, Throwable t) {
-//                        call.cancel();
-//                    }
-//                });
+                userLogin();
             }
         });
     }
     public void ToastMessage(String message){
         Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
+    }
+
+    public void userLogin(){
+        String username = userNameEditText.getText().toString();
+        String password = passwordEditText.getText().toString();
+        if(username.equals("")){ ToastMessage("Please fill in username"); return;}
+        if(password.equals("")){ ToastMessage("Please fill in password"); return;}
+
+        mAuth.signInWithEmailAndPassword(username, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    user = FirebaseAuth.getInstance().getCurrentUser();
+                    reference = FirebaseDatabase.getInstance().getReference("Users");
+                    userID = user.getUid();
+
+                    reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            FdUser userProfile = snapshot.getValue(FdUser.class);
+                            if(userProfile != null){
+                                gv.setUsername(userProfile.getUsername());
+                                gv.setToken(userID);
+                                gv.setLogin(true);
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
+                    Intent i = new Intent(getActivity(),MainActivity.class) ;
+                    startActivity(i);
+
+                    Log.e("Login info",""+gv.getUsername()+" "+gv.getToken());
+                }else{
+                    ToastMessage("Failed to login! Please check your credentials");
+                }
+            }
+        });
+
     }
 }

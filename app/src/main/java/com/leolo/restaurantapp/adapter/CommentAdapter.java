@@ -16,6 +16,8 @@ import com.leolo.restaurantapp.API.APIClient;
 import com.leolo.restaurantapp.API.APIInterface;
 import com.leolo.restaurantapp.API.Comments;
 import com.leolo.restaurantapp.API.CreateUserResponse;
+import com.leolo.restaurantapp.FirebaseDao.DaoComment;
+import com.leolo.restaurantapp.FirebaseModel.Comment;
 import com.leolo.restaurantapp.R;
 import com.leolo.restaurantapp.model.AsiaFood;
 
@@ -30,11 +32,12 @@ import retrofit2.Response;
 public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentViewHolder>{
 
     Context context;
-    List<Comments.comment> comments;
+    List<Comment> comments;
     GlobalVariable gv;
     APIInterface apiInterface;
+    DaoComment daoComment;
 
-    public CommentAdapter(Context context, List<Comments.comment> comments) {
+    public CommentAdapter(Context context, List<Comment> comments) {
         this.context = context;
         this.comments = comments;
     }
@@ -51,11 +54,12 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
         Long timeStamp;
         apiInterface = APIClient.getClient().create(APIInterface.class);
         gv = (GlobalVariable)context.getApplicationContext();
+        daoComment = new DaoComment();
 
-        if(comments.get(position).timestamp instanceof Double){
-            timeStamp = Math.round((double)comments.get(position).timestamp);
+        if(comments.get(position).getTimestamp() instanceof Double){
+            timeStamp = Math.round((double)comments.get(position).getTimestamp());
         }else{
-            timeStamp = (Long)comments.get(position).timestamp;
+            timeStamp = (Long)comments.get(position).getTimestamp();
         }
 
         holder.tv_name.setText(comments.get(position).getUsername());
@@ -69,21 +73,11 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
             public void onClick(View v) {
                 if (gv.isLogin()) {
                     if (comments.get(position).getUsername().equals(gv.getUsername())) {
-                        Log.e("tes", gv.getUsername());
-                        Call<CreateUserResponse> call = apiInterface.removeComment(gv.getToken(), comments.get(position).getId());
-                        call.enqueue(new Callback<CreateUserResponse>() {
-                            @Override
-                            public void onResponse(Call<CreateUserResponse> call, Response<CreateUserResponse> response) {
-                                System.out.println("status " + response.body().message);
-                                comments.remove(position);
-                                notifyItemRemoved(position);
-                            }
-
-                            @Override
-                            public void onFailure(Call<CreateUserResponse> call, Throwable t) {
-                                Log.d("fail", "leolo123" + t.getMessage());
-                                call.cancel();
-                            }
+                        daoComment.remove(comments.get(position).getKey()).addOnSuccessListener(suc ->{
+                            Log.d("remove favorites","successful");
+                            Toast.makeText(context, "Delete comment successful!", Toast.LENGTH_SHORT).show();
+                        }).addOnFailureListener(er->{
+                            Log.d("paul",er.getMessage());
                         });
                     } else {
                         Toast.makeText(context, "you can not delete which is not your!", Toast.LENGTH_SHORT).show();

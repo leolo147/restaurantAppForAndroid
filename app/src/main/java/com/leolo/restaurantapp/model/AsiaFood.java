@@ -18,6 +18,8 @@ public class AsiaFood implements Serializable {
         this.id = id;
     }
 
+
+
     Integer phone;
     String imgUrl;
 

@@ -1,10 +1,13 @@
 package com.leolo.restaurantapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +17,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.leolo.restaurantapp.API.APIClient;
 import com.leolo.restaurantapp.API.APIInterface;
 import com.leolo.restaurantapp.API.Comments;
@@ -22,6 +30,11 @@ import com.leolo.restaurantapp.API.FavoriteResponseWithId;
 import com.leolo.restaurantapp.API.Favorites;
 import com.leolo.restaurantapp.API.FavoritesResquestModel;
 import com.leolo.restaurantapp.API.restaurants;
+import com.leolo.restaurantapp.FirebaseDao.DaoComment;
+import com.leolo.restaurantapp.FirebaseDao.DaoFavorite;
+import com.leolo.restaurantapp.FirebaseModel.Comment;
+import com.leolo.restaurantapp.FirebaseModel.Favorite;
+import com.leolo.restaurantapp.FirebaseModel.Restaurants;
 import com.leolo.restaurantapp.adapter.AsiaFoodAdapter;
 import com.leolo.restaurantapp.adapter.CommentAdapter;
 import com.leolo.restaurantapp.adapter.GlobalVariable;
@@ -47,14 +60,21 @@ public class DetailsActivity extends AppCompatActivity {
     String favorites_id;
     RecyclerView rv_comment;
     CommentAdapter commentAdapter;
+    DaoFavorite daoFavorite;
+    DaoComment daoComment;
+    AsiaFood asiaFood;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-        AsiaFood asiaFood = (AsiaFood)getIntent().getSerializableExtra("asiaFood");
+        asiaFood = (AsiaFood)getIntent().getSerializableExtra("asiaFood");
         gv = (GlobalVariable)getApplicationContext();
         apiInterface = APIClient.getClient().create(APIInterface.class);
+        daoFavorite = new DaoFavorite();
+        daoComment = new DaoComment();
 
         resNameTextView = findViewById(R.id.resNameTextView);
         dirTextView = findViewById(R.id.dirTextView);
@@ -77,56 +97,44 @@ public class DetailsActivity extends AppCompatActivity {
         phoneTextView.setText("Phone no.: "+asiaFood.getPhone());
         Picasso.with(context).load(asiaFood.getImgUrl()).into(resImageView);
 
-        List<Comments.comment> commentList = new ArrayList<>();
-        Comments comments = new Comments();
 
         APIInterface apiInterface = APIClient.getClient().create(APIInterface.class);
-
-        Call<Comments> call = apiInterface.getUserComments(asiaFood.getRestaurantName());
-        call.enqueue(new Callback<Comments>() {
-            @Override
-            public void onResponse(Call<Comments> call, Response<Comments> response) {
-                for(Comments.comment comment : response.body().comments) {
-                    Log.d("TAG123",comment.content+"");
-                    commentList.add(comment);
-                }
-                setCommentRecycler(commentList);
-            }
-
-            @Override
-            public void onFailure(Call<Comments> call, Throwable t) {
-                Log.d("fail","leolo123"+ t.getMessage());
-                call.cancel();
-            }
-        });
+        getComment();
 
         if(gv.isLogin()) {
 
-
-            Call<Favorites> favoritesCall = apiInterface.getUserFavorites(gv.getToken(), gv.getUsername());
-            favoritesCall.enqueue(new Callback<Favorites>() {
+            daoFavorite.getByUsername(gv.getUsername()).addValueEventListener(new ValueEventListener() {
                 @Override
-                public void onResponse(Call<Favorites> call, Response<Favorites> response) {
-                    if (!response.equals("")) {
-                        for (Favorites.favorite favorite : response.body().favorites) {
-                            Log.d("favorite_resName", favorite.restaurant_name + "");
-                            if (favorite.restaurant_name.equals(resNameTextView.getText().toString())) {
-                                isfarorite = true;
-                                favImageView.setImageResource(R.drawable.ic_heart_border);
-                                favorites_id = favorite.id;
-                            }
-
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    for(DataSnapshot data : snapshot.getChildren()){
+                        Favorite favorite = data.getValue(Favorite.class);
+                        if(favorite.getRestaurant_name().equals(asiaFood.getRestaurantName())){
+                            isfarorite = true;
+                            favImageView.setImageResource(R.drawable.ic_heart_border);
+                            Log.d("getByUsername",data.getKey());
+                            favorites_id = data.getKey();
                         }
+
                     }
+
                 }
 
                 @Override
-                public void onFailure(Call<Favorites> call, Throwable t) {
-                    Log.d("fail", "leolo123" + t.getMessage());
-                    call.cancel();
+                public void onCancelled(@NonNull DatabaseError error) {
+
                 }
             });
         }
+
+        phoneTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phoneNum = asiaFood.getPhone().toString();
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:"+phoneNum));
+                startActivity(callIntent);
+            }
+        });
 
         favImageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,42 +143,16 @@ public class DetailsActivity extends AppCompatActivity {
                     if(isfarorite){
                         favImageView.setImageResource(R.drawable.ic_heart);
                         isfarorite = false;
-
-                        Call<CreateUserResponse> call = apiInterface.removeFavorite(gv.getToken(),favorites_id);
-                        call.enqueue(new Callback<CreateUserResponse>() {
-                            @Override
-                            public void onResponse(Call<CreateUserResponse> call, Response<CreateUserResponse> response) {
-                                System.out.println("status "+response.body().message);
-                            }
-
-                            @Override
-                            public void onFailure(Call<CreateUserResponse> call, Throwable t) {
-                                Log.d("fail", "leolo123" + t.getMessage());
-                                call.cancel();
-                            }
-                        });
+                        removeFavorite();
                     }else {
                         favImageView.setImageResource(R.drawable.ic_heart_border);
                         isfarorite = true;
 
-                        FavoritesResquestModel favoritesResquestModel = new FavoritesResquestModel(gv.getUsername(),asiaFood.getRestaurantName());
-
-                        Call<FavoriteResponseWithId> call = apiInterface.addFavorite(favoritesResquestModel,gv.getToken());
-                        call.enqueue(new Callback<FavoriteResponseWithId>() {
-                            @Override
-                            public void onResponse(Call<FavoriteResponseWithId> call, Response<FavoriteResponseWithId> response) {
-                                System.out.println("status "+response.body().message);
-                                favorites_id = response.body().id;
-                            }
-
-                            @Override
-                            public void onFailure(Call<FavoriteResponseWithId> call, Throwable t) {
-                                Log.d("fail", "leolo123" + t.getMessage());
-                                call.cancel();
-                            }
-                        });
+                        addFavorite();
 
                     }
+                }else{
+                    Toast.makeText(getApplicationContext(), "Please login first!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -181,34 +163,16 @@ public class DetailsActivity extends AppCompatActivity {
                 String content = post_detail_comment.getText().toString();
                 if(gv.isLogin()) {
                     if(content!=null){
-                        Comments.comment comment = new Comments.comment(gv.getUsername(),asiaFood.getRestaurantName(),content);
-
-                        Call<FavoriteResponseWithId> call = apiInterface.addComment(comment,gv.getToken());
-                        call.enqueue(new Callback<FavoriteResponseWithId>() {
-                            @Override
-                            public void onResponse(Call<FavoriteResponseWithId> call, Response<FavoriteResponseWithId> response) {
-                                System.out.println("status "+response.body().message);
-                                comment.setId(response.body().id);
-                                commentList.add(comment);
-                                commentAdapter.notifyDataSetChanged();
-                                setCommentRecycler(commentList);
-                            }
-
-                            @Override
-                            public void onFailure(Call<FavoriteResponseWithId> call, Throwable t) {
-                                Log.d("fail", "leolo123" + t.getMessage());
-                                call.cancel();
-                            }
-                        });
+                        addComment();
                     }
                 }else{
-                    Toast.makeText(context, "Please login first!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Please login first!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
 
-    private void setCommentRecycler(List<Comments.comment> commentList) {
+    private void setCommentRecycler(List<Comment> commentList) {
 
         //rv_comment = findViewById(R.id.rv_comment);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
@@ -217,4 +181,54 @@ public class DetailsActivity extends AppCompatActivity {
         rv_comment.setAdapter(commentAdapter);
 
     }
+
+    private void addFavorite(){
+        Favorite favorite = new Favorite(gv.getUsername(),asiaFood.getRestaurantName());
+        Log.d("paul",favorite.getRestaurant_name()+favorite.getUsername());
+        daoFavorite.add(favorite).addOnSuccessListener(suc ->{
+            Log.d("add favorites","successful");
+        }).addOnFailureListener(er->{
+            Log.d("paul",er.getMessage());
+        });
+    }
+
+    private void removeFavorite(){
+        daoFavorite.remove(favorites_id).addOnSuccessListener(suc ->{
+            Log.d("remove favorites","successful");
+        }).addOnFailureListener(er->{
+            Log.d("paul",er.getMessage());
+        });
+    }
+
+    private void addComment(){
+        Comment comment = new Comment(gv.getUsername(),asiaFood.getRestaurantName(),post_detail_comment.getText().toString());
+        daoComment.add(comment).addOnSuccessListener(suc ->{
+            Log.d("add comment","successful");
+        }).addOnFailureListener(er->{
+            Log.d("paul",er.getMessage());
+        });
+
+    }
+
+    private void getComment(){
+        daoComment.getByRestaurantName(asiaFood.getRestaurantName()).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                List<Comment> comments = new ArrayList<>();;
+                for(DataSnapshot data : snapshot.getChildren()){
+                    Comment comment = data.getValue(Comment.class);
+                    comment.setKey(data.getKey());
+                    comments.add(comment);
+                }
+                setCommentRecycler(comments);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.e("fail",error.getMessage());
+            }
+        });
+    }
+
+
 }
