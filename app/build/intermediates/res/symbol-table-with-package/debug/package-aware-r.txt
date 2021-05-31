@@ -1423,6 +1423,7 @@ drawable ic_account
 drawable ic_bx_cart_2
 drawable ic_bx_share_alt_1
 drawable ic_calendar_black_24dp
+drawable ic_call_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
 drawable ic_group_1675
@@ -1567,6 +1568,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnLogin
+id btnLogout
 id btnSignUp
 id buttonPanel
 id cancel_action
@@ -1629,7 +1631,6 @@ id fitToContents
 id fixed
 id food_image
 id forever
-id forgot_password
 id fragment_container
 id fullAddressTextView
 id ghost_view
@@ -1647,8 +1648,6 @@ id icon_group
 id icon_only
 id ifRoom
 id image
-id imageView
-id imageView2
 id imageView4
 id info
 id invisible
@@ -1833,6 +1832,7 @@ id up
 id useLogo
 id userComment
 id userNameEditText
+id usernameEditText
 id view_offset_helper
 id visible
 id wide
@@ -1926,6 +1926,7 @@ layout design_text_input_start_icon
 layout fragment_home
 layout fragment_login
 layout fragment_map
+layout fragment_user_info
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2018,6 +2019,9 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string account
+string add
+string address
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2026,6 +2030,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string comment
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -2045,6 +2050,8 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
+string districh
+string email
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2057,7 +2064,11 @@ string google_maps_key
 string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string home
 string icon_content_description
+string location
+string loginTitle
+string logout
 string map_key
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
@@ -2093,15 +2104,25 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string phone
 string project_id
+string resgisterTitle
+string restaurant
 string search_menu_title
+string signin
+string signup
 string status_bar_notification_info_overflow
+string title
 string title_activity_maps
+string userInfoTitle
+string username
+string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

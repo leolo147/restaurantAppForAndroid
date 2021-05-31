@@ -101,7 +101,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onSuccess(Location location) {
                 userLocation = new LatLng(location.getLatitude(), location.getLongitude());
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation,14));
-                new FetchURL(MapsActivity.this).execute(getUrl(userLocation, restaurant, "driving"), "driving");
+                new FetchURL(MapsActivity.this).execute(getUrl(userLocation, restaurant, "walking"), "walking");
             }
         });
     }

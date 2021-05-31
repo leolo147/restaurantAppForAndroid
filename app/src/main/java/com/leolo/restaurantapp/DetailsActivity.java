@@ -94,9 +94,11 @@ public class DetailsActivity extends AppCompatActivity {
         rv_comment = findViewById(R.id.rv_comment);
 
         resNameTextView.setText(asiaFood.getRestaurantName());
-        dirTextView.setText("District : "+asiaFood.getDistrict());
-        fullAddressTextView.setText(asiaFood.getFull_address());
-        String phoneText = "<font color='black'>Phone no.: </font><font color='blue'>"+asiaFood.getPhone().toString()+"</font>";
+        dirTextView.setText(getResources().getString(R.string.districh)+asiaFood.getDistrict());
+        String addressText = "<font color='black'>"+getResources().getString(R.string.address)+" </font><font color='blue'>"+asiaFood.getFull_address().toString()+"</font>";
+        fullAddressTextView.setText(Html.fromHtml(addressText), TextView.BufferType.SPANNABLE);
+        fullAddressTextView.setMovementMethod(LinkMovementMethod.getInstance());
+        String phoneText = "<font color='black'>"+getResources().getString(R.string.phone)+"</font><font color='blue'>"+asiaFood.getPhone().toString()+"</font>";
         phoneTextView.setText(Html.fromHtml(phoneText), TextView.BufferType.SPANNABLE);
         phoneTextView.setMovementMethod(LinkMovementMethod.getInstance());
         Picasso.with(context).load(asiaFood.getImgUrl()).into(resImageView);
@@ -106,7 +108,7 @@ public class DetailsActivity extends AppCompatActivity {
         getComment();
 
         if(gv.isLogin()) {
-
+            // if already login, check favorite or not
             daoFavorite.getByUsername(gv.getUsername()).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -133,6 +135,7 @@ public class DetailsActivity extends AppCompatActivity {
         fullAddressTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // to google map view
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
                 i.putExtra("asiaFood",asiaFood);
                 startActivity(i);
@@ -142,6 +145,7 @@ public class DetailsActivity extends AppCompatActivity {
         phoneTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // to phone call view
                 String phoneNum = asiaFood.getPhone().toString();
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 callIntent.setData(Uri.parse("tel:"+phoneNum));
@@ -152,6 +156,7 @@ public class DetailsActivity extends AppCompatActivity {
         favImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // if already login, do add favorite/remove favorite
                 if(gv.isLogin()) {
                     if(isfarorite){
                         favImageView.setImageResource(R.drawable.ic_heart);
@@ -174,8 +179,9 @@ public class DetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String content = post_detail_comment.getText().toString();
+                // if already login, add comment
                 if(gv.isLogin()) {
-                    if(content!=null){
+                    if(content!=""){
                         addComment();
                     }
                 }else{
@@ -186,7 +192,6 @@ public class DetailsActivity extends AppCompatActivity {
     }
 
     private void setCommentRecycler(List<Comment> commentList) {
-
         //rv_comment = findViewById(R.id.rv_comment);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         rv_comment.setLayoutManager(layoutManager);

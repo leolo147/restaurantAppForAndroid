@@ -65,6 +65,7 @@
 
     <TextView
         android:id="@+id/fullAddressTextView"
+        android:autoLink="all"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -108,7 +109,7 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/edittext_button_style_rounded"
         android:ems="10"
-        android:hint="Write Comment"
+        android:hint="@string/comment"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv_comment" />
@@ -122,7 +123,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/edittext_button_style_rounded"
-        android:text="Add"
+        android:text="@string/add"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/post_detail_comment"
         app:layout_constraintEnd_toEndOf="parent"

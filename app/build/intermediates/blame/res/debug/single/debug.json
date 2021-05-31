@@ -1396,6 +1396,10 @@
         "source": "/Users/leolo/.gradle/caches/transforms-2/files-2.1/6a7825d0b9dade50a360c361d97ed27b/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "/Users/leolo/Downloads/restaurantApp/app/build/intermediates/res/merged/debug/drawable_ic_call_black_24dp.xml.flat",
+        "source": "/Users/leolo/Downloads/restaurantApp/app/src/main/res/drawable/ic_call_black_24dp.xml"
+    },
+    {
         "merged": "/Users/leolo/Downloads/restaurantApp/app/build/intermediates/res/merged/debug/xml_standalone_badge_gravity_bottom_start.xml.flat",
         "source": "/Users/leolo/.gradle/caches/transforms-2/files-2.1/a4181ff90537ce64342c834f164eeadc/material-1.1.0/res/xml/standalone_badge_gravity_bottom_start.xml"
     },
@@ -1914,6 +1918,10 @@
     {
         "merged": "/Users/leolo/Downloads/restaurantApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/leolo/.gradle/caches/transforms-2/files-2.1/6a7825d0b9dade50a360c361d97ed27b/appcompat-1.1.0/res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/leolo/Downloads/restaurantApp/app/build/intermediates/res/merged/debug/layout_fragment_user_info.xml.flat",
+        "source": "/Users/leolo/Downloads/restaurantApp/app/src/main/res/layout/fragment_user_info.xml"
     },
     {
         "merged": "/Users/leolo/Downloads/restaurantApp/app/build/intermediates/res/merged/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat",
@@ -2472,6 +2480,10 @@
         "source": "/Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
+        "merged": "/Users/leolo/Downloads/restaurantApp/app/build/intermediates/res/merged/debug/layout_activity_maps.xml.flat",
+        "source": "/Users/leolo/Downloads/restaurantApp/app/src/main/res/layout/activity_maps.xml"
+    },
+    {
         "merged": "/Users/leolo/Downloads/restaurantApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/Users/leolo/.gradle/caches/transforms-2/files-2.1/6a7825d0b9dade50a360c361d97ed27b/appcompat-1.1.0/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png"
     },
@@ -2482,10 +2494,6 @@
     {
         "merged": "/Users/leolo/Downloads/restaurantApp/app/build/intermediates/res/merged/debug/color_mtrl_card_view_ripple.xml.flat",
         "source": "/Users/leolo/.gradle/caches/transforms-2/files-2.1/a4181ff90537ce64342c834f164eeadc/material-1.1.0/res/color/mtrl_card_view_ripple.xml"
-    },
-    {
-        "merged": "/Users/leolo/Downloads/restaurantApp/app/build/intermediates/res/merged/debug/layout_activity_maps.xml.flat",
-        "source": "/Users/leolo/Downloads/restaurantApp/app/src/main/res/layout/activity_maps.xml"
     },
     {
         "merged": "/Users/leolo/Downloads/restaurantApp/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat",

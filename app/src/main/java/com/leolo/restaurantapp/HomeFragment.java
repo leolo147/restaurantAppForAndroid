@@ -73,7 +73,7 @@ public class HomeFragment extends Fragment {
         List<AsiaFood> asiaFoodList = new ArrayList<>();
 
 
-//        addRestaurant();
+        //addRestaurant();
 
         daoRestaurant.get().addValueEventListener(new ValueEventListener() {
             @Override
@@ -123,8 +123,8 @@ public class HomeFragment extends Fragment {
     }
 
     private void addRestaurant(){
-        Restaurants restaurant = new Restaurants("18樓雞煲火鍋專門店","荃灣","荃灣眾安街55號大鴻輝(荃灣)中心18樓",
-                23905390,"https://static5.orstatic.com/userphoto2/photo/Y/RLM/05G9T8522609DC5478BFA9px.jpg");
+        Restaurants restaurant = new Restaurants("L.D.K. by Ufufu Café (新都會廣場)","葵芳","葵芳興芳路223號新都會廣場3樓345A號舖",
+                35863899,"https://static6.orstatic.com/userphoto/photo/P/JU1/03X1MT13E58074AE1D62C3px.jpg");
         daoRestaurant.add(restaurant).addOnSuccessListener(suc ->{
             Log.d("paul","successful");
         }).addOnFailureListener(er->{
