@@ -1,18 +1,21 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-51:12
 MERGED from [com.google.android.material:material:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a4181ff90537ce64342c834f164eeadc/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/6a7825d0b9dade50a360c361d97ed27b/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2986d126174a8e0f838cbc324d88dc03/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:17:1-83:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/24bbed4f811d98a31b865d5f4df3bf0f/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/7cd7a99061e865d0b0b72a500494dc4d/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/aac8112adde4eea7303fb849a1a06abf/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/e144014f52c8728788a12dacfb7a44d9/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/4e011ebfce12998b8a11395200fd4cd9/firebase-analytics-19.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2800a792ba6e5a4af3a43415336e87a0/play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta01] /Users/leolo/.gradle/caches/transforms-2/files-2.1/cb13703de331337607da3c31640840bf/firebase-appcheck-interop-16.0.0-beta01/AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/081573a4d35d8eb147557d88dabfbe7b/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
@@ -24,6 +27,7 @@ MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/leolo
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/50b6026961111a721a6845d1ad3a12a7/firebase-installations-interop-17.0.0/AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/be9085c67515fc8ac550a46c7873af72/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/925157cfd13bd6092f79aeaef8280e91/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/64274302e18c6cbf1f7a735fad5a1da1/play-services-measurement-sdk-19.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/c785902ff54b41fb7d36f7822d84a60e/play-services-measurement-impl-19.0.0/AndroidManifest.xml:17:1-31:12
@@ -38,6 +42,8 @@ MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/leolo/.gradle/
 MERGED from [androidx.browser:browser:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/bbf2eeb13dac07292c1cad32d36628d7/browser-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/3a73db8075b8e9f598827f4414cba53d/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/1f42f1a65e7821a0753be2b5daf2af19/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2d2fc7531b9b1529c647f0f80ffd5c16/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/f6d6bc9861dcf70e1ff02f82c8ca40f9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/04c36a46001d4e4b47e3ecc254d25439/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/47cfa9a3bae5349d41eca54a151c2075/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/81e05ce26faa1b24291ef3eefe84314c/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -45,7 +51,6 @@ MERGED from [androidx.customview:customview:1.0.0] /Users/leolo/.gradle/caches/t
 MERGED from [androidx.transition:transition:1.2.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/46a13ea1295edd9e2954dfcad95b1ff5/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/c2ceae68555e4462ffcbe57ed7273f2f/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/8901df32a560d4b29dd17ca0147b7b5b/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/f6d6bc9861dcf70e1ff02f82c8ca40f9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/ea0c3d73af8c47b798ff9c595730cb8d/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/de3cf64d92725af988f85fccc5156516/activity-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/75477b15f3b27ebd06775bc8ffd88019/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -55,38 +60,44 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/leolo/.gradle/ca
 MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/d7cd6aefa0a473c3194c61a6cc951ff7/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/f6133befae90f15812dcc63b1eebac6f/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/75947f3e41b7b61a2b7d8877bb7586ac/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/30483913aca187cb22f7d38cffddc39d/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/077a1c8fd1e8260128c25c0d4c8aaefb/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/06a7e5a0d5b9f2b0fb05e456c9763f58/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/1847332e906c8f6a749ad5ec05a729d1/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/7ecea1b1c449948aa5db2a7664322b76/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78eb24d559e0556f0bdedc088268f123/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/30483913aca187cb22f7d38cffddc39d/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/077a1c8fd1e8260128c25c0d4c8aaefb/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/bb6927b36aa58468471733c64a957fab/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/1e93f2666131e2e4fabb739f52a33c35/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/e7711593ab33f872b5fc1fde8a66b6e1/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-51:12
 		INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:1-51:12
 		INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:4:5-66
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/5e36ec3c44c05760c810633b3dea22cd/firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
@@ -98,13 +109,17 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/ae1535cb543851c95660301aae8c68da/play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/ae1535cb543851c95660301aae8c68da/play-services-measurement-sdk-api-19.0.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.CALL_PHONE
-ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:5:5-69
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:12:5-69
 	android:name
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:5:22-66
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:12:22-66
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:13:22-78
 application
-ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:7:5-26:19
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:15:5-49:19
 MERGED from [com.google.android.material:material:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a4181ff90537ce64342c834f164eeadc/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a4181ff90537ce64342c834f164eeadc/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2986d126174a8e0f838cbc324d88dc03/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -115,6 +130,10 @@ MERGED from [com.google.firebase:firebase-analytics:19.0.0] /Users/leolo/.gradle
 MERGED from [com.google.firebase:firebase-analytics:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/4e011ebfce12998b8a11395200fd4cd9/firebase-analytics-19.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2800a792ba6e5a4af3a43415336e87a0/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2800a792ba6e5a4af3a43415336e87a0/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta01] /Users/leolo/.gradle/caches/transforms-2/files-2.1/cb13703de331337607da3c31640840bf/firebase-appcheck-interop-16.0.0-beta01/AndroidManifest.xml:24:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta01] /Users/leolo/.gradle/caches/transforms-2/files-2.1/cb13703de331337607da3c31640840bf/firebase-appcheck-interop-16.0.0-beta01/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:26:5-34:19
@@ -131,6 +150,8 @@ MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gra
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/be9085c67515fc8ac550a46c7873af72/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/be9085c67515fc8ac550a46c7873af72/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/925157cfd13bd6092f79aeaef8280e91/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/925157cfd13bd6092f79aeaef8280e91/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/64274302e18c6cbf1f7a735fad5a1da1/play-services-measurement-sdk-19.0.0/AndroidManifest.xml:22:5-23:19
@@ -154,43 +175,55 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/leol
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9edbacdd0dfc3eb1d1a90bef1fa6344b/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:19:9-41
 	android:roundIcon
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:20:9-54
 	android:icon
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:18:9-43
 	android:allowBackup
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:15:9-40
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:22:9-40
 	android:usesCleartextTraffic
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:14:9-44
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:23:9-44
 	android:name
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:8:9-47
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:16:9-47
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:33:9-35:47
+	android:value
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:35:13-44
+	android:name
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:34:13-58
+activity#com.leolo.restaurantapp.MapsActivity
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:37:9-39:68
+	android:label
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:39:13-56
+	android:name
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:38:13-41
 activity#com.leolo.restaurantapp.DetailsActivity
-ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:17:9-85
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:40:9-53
 	android:name
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:17:19-73
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:40:19-50
 activity#com.leolo.restaurantapp.SignUpActivity
-ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:18:9-84
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:41:9-52
 	android:name
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:18:19-72
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:41:19-49
 activity#com.leolo.restaurantapp.MainActivity
-ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:19:9-25:20
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:42:9-48:20
 	android:name
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:19:19-70
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:42:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:20:13-24:29
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:43:13-47:29
 action#android.intent.action.MAIN
-ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:23:27-74
+		ADDED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:46:27-74
 uses-sdk
 INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml
@@ -203,6 +236,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/leolo/.gra
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2986d126174a8e0f838cbc324d88dc03/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/24bbed4f811d98a31b865d5f4df3bf0f/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/24bbed4f811d98a31b865d5f4df3bf0f/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/7cd7a99061e865d0b0b72a500494dc4d/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/7cd7a99061e865d0b0b72a500494dc4d/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/aac8112adde4eea7303fb849a1a06abf/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -213,6 +248,10 @@ MERGED from [com.google.firebase:firebase-analytics:19.0.0] /Users/leolo/.gradle
 MERGED from [com.google.firebase:firebase-analytics:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/4e011ebfce12998b8a11395200fd4cd9/firebase-analytics-19.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2800a792ba6e5a4af3a43415336e87a0/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2800a792ba6e5a4af3a43415336e87a0/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta01] /Users/leolo/.gradle/caches/transforms-2/files-2.1/cb13703de331337607da3c31640840bf/firebase-appcheck-interop-16.0.0-beta01/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta01] /Users/leolo/.gradle/caches/transforms-2/files-2.1/cb13703de331337607da3c31640840bf/firebase-appcheck-interop-16.0.0-beta01/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:20:5-44
@@ -235,6 +274,8 @@ MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/l
 MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/50b6026961111a721a6845d1ad3a12a7/firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/be9085c67515fc8ac550a46c7873af72/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/be9085c67515fc8ac550a46c7873af72/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/925157cfd13bd6092f79aeaef8280e91/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/925157cfd13bd6092f79aeaef8280e91/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/64274302e18c6cbf1f7a735fad5a1da1/play-services-measurement-sdk-19.0.0/AndroidManifest.xml:20:5-44
@@ -263,6 +304,10 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/leolo/.gradle/
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/3a73db8075b8e9f598827f4414cba53d/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/1f42f1a65e7821a0753be2b5daf2af19/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/1f42f1a65e7821a0753be2b5daf2af19/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2d2fc7531b9b1529c647f0f80ffd5c16/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2d2fc7531b9b1529c647f0f80ffd5c16/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/f6d6bc9861dcf70e1ff02f82c8ca40f9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/f6d6bc9861dcf70e1ff02f82c8ca40f9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/04c36a46001d4e4b47e3ecc254d25439/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/04c36a46001d4e4b47e3ecc254d25439/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/47cfa9a3bae5349d41eca54a151c2075/viewpager-1.0.0/AndroidManifest.xml:20:5-44
@@ -277,8 +322,6 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/leolo
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/c2ceae68555e4462ffcbe57ed7273f2f/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/8901df32a560d4b29dd17ca0147b7b5b/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/8901df32a560d4b29dd17ca0147b7b5b/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/f6d6bc9861dcf70e1ff02f82c8ca40f9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/f6d6bc9861dcf70e1ff02f82c8ca40f9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/ea0c3d73af8c47b798ff9c595730cb8d/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/ea0c3d73af8c47b798ff9c595730cb8d/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/de3cf64d92725af988f85fccc5156516/activity-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -297,6 +340,10 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/f6133befae90f15812dcc63b1eebac6f/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/75947f3e41b7b61a2b7d8877bb7586ac/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/75947f3e41b7b61a2b7d8877bb7586ac/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/30483913aca187cb22f7d38cffddc39d/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/30483913aca187cb22f7d38cffddc39d/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/077a1c8fd1e8260128c25c0d4c8aaefb/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/077a1c8fd1e8260128c25c0d4c8aaefb/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/06a7e5a0d5b9f2b0fb05e456c9763f58/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/06a7e5a0d5b9f2b0fb05e456c9763f58/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/1847332e906c8f6a749ad5ec05a729d1/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
@@ -305,10 +352,6 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/leolo/.gradle/
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/7ecea1b1c449948aa5db2a7664322b76/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78eb24d559e0556f0bdedc088268f123/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78eb24d559e0556f0bdedc088268f123/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/30483913aca187cb22f7d38cffddc39d/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/30483913aca187cb22f7d38cffddc39d/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/077a1c8fd1e8260128c25c0d4c8aaefb/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/077a1c8fd1e8260128c25c0d4c8aaefb/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/bb6927b36aa58468471733c64a957fab/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/bb6927b36aa58468471733c64a957fab/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/1e93f2666131e2e4fabb739f52a33c35/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
@@ -329,6 +372,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/5e36ec3c44c05760c810633b3dea22cd/firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
@@ -433,6 +478,18 @@ ADDED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/c
 		ADDED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:34:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:33:17-109
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:25:5-68

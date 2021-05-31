@@ -9,6 +9,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -94,7 +96,9 @@ public class DetailsActivity extends AppCompatActivity {
         resNameTextView.setText(asiaFood.getRestaurantName());
         dirTextView.setText("District : "+asiaFood.getDistrict());
         fullAddressTextView.setText(asiaFood.getFull_address());
-        phoneTextView.setText("Phone no.: "+asiaFood.getPhone());
+        String phoneText = "<font color='black'>Phone no.: </font><font color='blue'>"+asiaFood.getPhone().toString()+"</font>";
+        phoneTextView.setText(Html.fromHtml(phoneText), TextView.BufferType.SPANNABLE);
+        phoneTextView.setMovementMethod(LinkMovementMethod.getInstance());
         Picasso.with(context).load(asiaFood.getImgUrl()).into(resImageView);
 
 
@@ -125,6 +129,15 @@ public class DetailsActivity extends AppCompatActivity {
                 }
             });
         }
+
+        fullAddressTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("asiaFood",asiaFood);
+                startActivity(i);
+            }
+        });
 
         phoneTextView.setOnClickListener(new View.OnClickListener() {
             @Override

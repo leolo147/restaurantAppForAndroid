@@ -72,25 +72,6 @@ public class HomeFragment extends Fragment {
 
         List<AsiaFood> asiaFoodList = new ArrayList<>();
 
-//        APIInterface apiInterface = APIClient.getClient().create(APIInterface.class);
-//
-//        Call<restaurants> call = apiInterface.getAllRestaurant();
-//        call.enqueue(new Callback<restaurants>() {
-//            @Override
-//            public void onResponse(Call<restaurants> call, Response<restaurants> response) {
-//                for(restaurants.rerestaurant rerestaurant : response.body().restaurants) {
-//                    Log.d("TAG123",rerestaurant.restaurant_name+"");
-//                    asiaFoodList.add(new AsiaFood(rerestaurant.restaurant_name, rerestaurant.district, rerestaurant.phone, rerestaurant.imgUrl, rerestaurant.full_address, rerestaurant.id));
-//                }
-//                setAsiaRecycler(asiaFoodList,view);
-//            }
-//
-//            @Override
-//            public void onFailure(Call<restaurants> call, Throwable t) {
-//                Log.d("fail","leolo123"+ t.getMessage());
-//                call.cancel();
-//            }
-//        });
 
 //        addRestaurant();
 

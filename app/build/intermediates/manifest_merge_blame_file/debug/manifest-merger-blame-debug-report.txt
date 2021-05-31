@@ -10,245 +10,292 @@
 9        android:targetSdkVersion="29" />
 9-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:4:5-66
-11-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:4:22-64
-12    <uses-permission android:name="android.permission.CALL_PHONE" />
-12-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:5:5-69
-12-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:5:22-66
-13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
-13-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:22-76
-14    <uses-permission android:name="android.permission.WAKE_LOCK" />
-14-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:24:5-68
-14-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:24:22-65
-15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-15-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:26:5-110
-15-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:26:22-107
-16
-17    <application
-17-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:7:5-26:19
-18        android:name="com.leolo.restaurantapp.adapter.GlobalVariable"
-18-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:8:9-47
-19        android:allowBackup="true"
-19-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:9:9-35
-20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9edbacdd0dfc3eb1d1a90bef1fa6344b/core-1.1.0/AndroidManifest.xml:24:18-86
-21        android:debuggable="true"
-22        android:icon="@mipmap/ic_launcher"
-22-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:10:9-43
-23        android:label="@string/app_name"
-23-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:11:9-41
-24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:12:9-54
-25        android:supportsRtl="true"
-25-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:13:9-35
-26        android:testOnly="true"
-27        android:theme="@style/AppTheme"
-27-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:15:9-40
-28        android:usesCleartextTraffic="true" >
-28-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:14:9-44
-29        <activity android:name="com.leolo.restaurantapp.DetailsActivity" />
-29-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:17:9-85
-29-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:17:19-73
-30        <activity android:name="com.leolo.restaurantapp.SignUpActivity" />
-30-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:18:9-84
-30-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:18:19-72
-31        <activity android:name="com.leolo.restaurantapp.MainActivity" >
-31-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:19:9-25:20
-31-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:19:19-70
-32            <intent-filter>
-32-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:20:13-24:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:21:17-69
-33-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:21:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:23:17-77
-35-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:23:27-74
-36            </intent-filter>
-37        </activity>
-38        <activity
-38-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
-39            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-39-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
-40            android:excludeFromRecents="true"
-40-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
-41            android:exported="true"
-41-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
-42            android:launchMode="singleTask"
-42-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
-43            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-43-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
-44            <intent-filter>
-44-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
-45                <action android:name="android.intent.action.VIEW" />
-45-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
-45-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
-46
-47                <category android:name="android.intent.category.DEFAULT" />
-47-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
-47-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
-48                <category android:name="android.intent.category.BROWSABLE" />
-48-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
-48-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
-49
-50                <data
-50-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
-51                    android:host="firebase.auth"
-51-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
-52                    android:path="/"
-52-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
-53                    android:scheme="genericidp" />
-53-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
-54            </intent-filter>
-55        </activity>
-56        <activity
-56-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
-57            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-57-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
-58            android:excludeFromRecents="true"
-58-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
-59            android:exported="true"
-59-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
-60            android:launchMode="singleTask"
-60-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
-61            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-61-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
-62            <intent-filter>
-62-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
-63                <action android:name="android.intent.action.VIEW" />
-63-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
-63-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
-64
-65                <category android:name="android.intent.category.DEFAULT" />
-65-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
-65-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
-66                <category android:name="android.intent.category.BROWSABLE" />
-66-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
-66-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
-67
-68                <data
-68-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
-69                    android:host="firebase.auth"
-69-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
-70                    android:path="/"
-70-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
-71                    android:scheme="recaptcha" />
-71-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
-72            </intent-filter>
-73        </activity>
+11    <!--
+12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+13         Google Maps Android API v2, but you must specify either coarse or fine
+14         location permissions for the 'MyLocation' functionality.
+15    -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:10:5-79
+16-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:11:5-67
+17-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:11:22-64
+18    <uses-permission android:name="android.permission.CALL_PHONE" />
+18-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:12:5-69
+18-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:12:22-66
+19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+19-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:13:5-81
+19-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:13:22-78
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+20-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:22-76
+21
+22    <uses-feature
+22-->[com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+23        android:glEsVersion="0x00020000"
+23-->[com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+24        android:required="true" />
+24-->[com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+25
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:24:5-68
+26-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:24:22-65
+27    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+27-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:26:5-110
+27-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:26:22-107
+28
+29    <application
+29-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:15:5-49:19
+30        android:name="com.leolo.restaurantapp.adapter.GlobalVariable"
+30-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:16:9-47
+31        android:allowBackup="true"
+31-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:17:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9edbacdd0dfc3eb1d1a90bef1fa6344b/core-1.1.0/AndroidManifest.xml:24:18-86
+33        android:debuggable="true"
+34        android:icon="@mipmap/ic_launcher"
+34-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:18:9-43
+35        android:label="@string/app_name"
+35-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:19:9-41
+36        android:roundIcon="@mipmap/ic_launcher_round"
+36-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:20:9-54
+37        android:supportsRtl="true"
+37-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:21:9-35
+38        android:testOnly="true"
+39        android:theme="@style/AppTheme"
+39-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:22:9-40
+40        android:usesCleartextTraffic="true" >
+40-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:23:9-44
+41
+42        <!--
+43             The API key for Google Maps-based APIs is defined as a string resource.
+44             (See the file "res/values/google_maps_api.xml").
+45             Note that the API key is linked to the encryption key used to sign the APK.
+46             You need a different API key for each encryption key, including the release key that is used to
+47             sign the APK for publishing.
+48             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+49        -->
+50        <meta-data
+50-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:33:9-35:47
+51            android:name="com.google.android.geo.API_KEY"
+51-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:34:13-58
+52            android:value="@string/map_key" />
+52-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:35:13-44
+53
+54        <activity
+54-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:37:9-39:68
+55            android:name="com.leolo.restaurantapp.MapsActivity"
+55-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:38:13-41
+56            android:label="@string/title_activity_maps" />
+56-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:39:13-56
+57        <activity android:name="com.leolo.restaurantapp.DetailsActivity" />
+57-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:40:9-53
+57-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:40:19-50
+58        <activity android:name="com.leolo.restaurantapp.SignUpActivity" />
+58-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:41:9-52
+58-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:41:19-49
+59        <activity android:name="com.leolo.restaurantapp.MainActivity" >
+59-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:42:9-48:20
+59-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:42:19-47
+60            <intent-filter>
+60-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:43:13-47:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:44:17-69
+61-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:44:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:46:17-77
+63-->/Users/leolo/Downloads/restaurantApp/app/src/main/AndroidManifest.xml:46:27-74
+64            </intent-filter>
+65        </activity>
+66        <activity
+66-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+67            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+67-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+68            android:excludeFromRecents="true"
+68-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+69            android:exported="true"
+69-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+70            android:launchMode="singleTask"
+70-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+71-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+72            <intent-filter>
+72-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+73                <action android:name="android.intent.action.VIEW" />
+73-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
+73-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
 74
-75        <service
-75-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
-76            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-76-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
-77            android:enabled="true"
-77-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
-78            android:exported="false" >
-78-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
-79            <intent-filter>
-79-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
-80                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-80-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
-80-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
-81
-82                <category android:name="android.intent.category.DEFAULT" />
-82-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
-82-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
-83            </intent-filter>
-84        </service>
-85        <service
-85-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
-86            android:name="com.google.firebase.components.ComponentDiscoveryService"
-86-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:75:13-84
-87            android:directBootAware="true"
-87-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
-88            android:exported="false" >
-88-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:76:13-37
-89            <meta-data
-89-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
-90                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-90-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
-91                android:value="com.google.firebase.components.ComponentRegistrar" />
-91-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
-92            <meta-data
-92-->[com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:32:13-34:85
-93                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-93-->[com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:33:17-109
-94                android:value="com.google.firebase.components.ComponentRegistrar" />
-94-->[com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:34:17-82
-95            <meta-data
-95-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:30:13-32:85
-96                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-96-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:31:17-139
-97                android:value="com.google.firebase.components.ComponentRegistrar" />
-97-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:32:17-82
-98            <meta-data
-98-->[com.google.firebase:firebase-installations:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/5e36ec3c44c05760c810633b3dea22cd/firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
-99                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-99-->[com.google.firebase:firebase-installations:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/5e36ec3c44c05760c810633b3dea22cd/firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
-100                android:value="com.google.firebase.components.ComponentRegistrar" />
-100-->[com.google.firebase:firebase-installations:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/5e36ec3c44c05760c810633b3dea22cd/firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
-101        </service>
+75                <category android:name="android.intent.category.DEFAULT" />
+75-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+75-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+76                <category android:name="android.intent.category.BROWSABLE" />
+76-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
+76-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
+77
+78                <data
+78-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
+79                    android:host="firebase.auth"
+79-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
+80                    android:path="/"
+80-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
+81                    android:scheme="genericidp" />
+81-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
+82            </intent-filter>
+83        </activity>
+84        <activity
+84-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+85            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+85-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+86            android:excludeFromRecents="true"
+86-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+87            android:exported="true"
+87-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+88            android:launchMode="singleTask"
+88-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+89            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+89-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+90            <intent-filter>
+90-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+91                <action android:name="android.intent.action.VIEW" />
+91-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
+91-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
+92
+93                <category android:name="android.intent.category.DEFAULT" />
+93-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+93-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+94                <category android:name="android.intent.category.BROWSABLE" />
+94-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
+94-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
+95
+96                <data
+96-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
+97                    android:host="firebase.auth"
+97-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
+98                    android:path="/"
+98-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
+99                    android:scheme="recaptcha" />
+99-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
+100            </intent-filter>
+101        </activity>
 102
-103        <provider
-103-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
-104            android:name="com.google.firebase.provider.FirebaseInitProvider"
-104-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
-105            android:authorities="com.leolo.restaurantapp.firebaseinitprovider"
-105-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
-106            android:directBootAware="true"
-106-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
-107            android:exported="false"
-107-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
-108            android:initOrder="100" />
-108-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+103        <service
+103-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+104            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+104-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+105            android:enabled="true"
+105-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+106            android:exported="false" >
+106-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+107            <intent-filter>
+107-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+108                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+108-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+108-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
 109
-110        <activity
-110-->[com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-111            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-111-->[com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-112            android:exported="false"
-112-->[com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-113            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-113-->[com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-114
-115        <receiver
-115-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:29:9-33:20
-116            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-116-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:30:13-85
-117            android:enabled="true"
-117-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:31:13-35
-118            android:exported="false" >
-118-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:32:13-37
-119        </receiver>
-120
-121        <service
-121-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:35:9-38:40
-122            android:name="com.google.android.gms.measurement.AppMeasurementService"
-122-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:36:13-84
-123            android:enabled="true"
-123-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:37:13-35
-124            android:exported="false" />
-124-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:38:13-37
-125        <service
-125-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:39:9-43:72
-126            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-126-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:40:13-87
-127            android:enabled="true"
-127-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:41:13-35
-128            android:exported="false"
-128-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:42:13-37
-129            android:permission="android.permission.BIND_JOB_SERVICE" />
-129-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:43:13-69
-130
-131        <meta-data
-131-->[com.google.android.gms:play-services-basement:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/6f6e62d03cb26e0976c00ba1c9c00580/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
-132            android:name="com.google.android.gms.version"
-132-->[com.google.android.gms:play-services-basement:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/6f6e62d03cb26e0976c00ba1c9c00580/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
-133            android:value="@integer/google_play_services_version" />
-133-->[com.google.android.gms:play-services-basement:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/6f6e62d03cb26e0976c00ba1c9c00580/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
-134    </application>
-135
-136</manifest>
+110                <category android:name="android.intent.category.DEFAULT" />
+110-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+110-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+111            </intent-filter>
+112        </service>
+113        <service
+113-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
+114            android:name="com.google.firebase.components.ComponentDiscoveryService"
+114-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:75:13-84
+115            android:directBootAware="true"
+115-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+116            android:exported="false" >
+116-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:76:13-37
+117            <meta-data
+117-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+118                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+118-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-auth:21.0.1] /Users/leolo/.gradle/caches/transforms-2/files-2.1/07950c1e9e7b9995b1600646df1e16b9/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:32:13-34:85
+121                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+121-->[com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:33:17-109
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-database:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/a54c97ec66659718ac85a1495efb6f35/firebase-database-20.0.0/AndroidManifest.xml:34:17-82
+123            <meta-data
+123-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:30:13-32:85
+124                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+124-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:31:17-139
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/78795967194f9f4bf0bae34ee80fe8d5/play-services-measurement-api-19.0.0/AndroidManifest.xml:32:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-installations:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/5e36ec3c44c05760c810633b3dea22cd/firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+127                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+127-->[com.google.firebase:firebase-installations:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/5e36ec3c44c05760c810633b3dea22cd/firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-installations:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/5e36ec3c44c05760c810633b3dea22cd/firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+129        </service> <!-- Needs to be explicitly declared on P+ -->
+130        <uses-library
+130-->[com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+131            android:name="org.apache.http.legacy"
+131-->[com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+132            android:required="false" />
+132-->[com.google.android.gms:play-services-maps:17.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/2e4316d8b5f30428b6e3636259b6bdb0/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+133
+134        <provider
+134-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+135            android:name="com.google.firebase.provider.FirebaseInitProvider"
+135-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+136            android:authorities="com.leolo.restaurantapp.firebaseinitprovider"
+136-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+137            android:directBootAware="true"
+137-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+138            android:exported="false"
+138-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+139            android:initOrder="100" />
+139-->[com.google.firebase:firebase-common:20.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/01b67befa1a87aa12acea003c99fa48f/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+140
+141        <activity
+141-->[com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+142            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+142-->[com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+143            android:exported="false"
+143-->[com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+144            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+144-->[com.google.android.gms:play-services-base:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/9a5a2dcab13c1344674a06610e3aab13/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+145
+146        <receiver
+146-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:29:9-33:20
+147            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+147-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:30:13-85
+148            android:enabled="true"
+148-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:31:13-35
+149            android:exported="false" >
+149-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:32:13-37
+150        </receiver>
+151
+152        <service
+152-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:35:9-38:40
+153            android:name="com.google.android.gms.measurement.AppMeasurementService"
+153-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:36:13-84
+154            android:enabled="true"
+154-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:37:13-35
+155            android:exported="false" />
+155-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:38:13-37
+156        <service
+156-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:39:9-43:72
+157            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+157-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:40:13-87
+158            android:enabled="true"
+158-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:41:13-35
+159            android:exported="false"
+159-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:42:13-37
+160            android:permission="android.permission.BIND_JOB_SERVICE" />
+160-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/076853588b9a8305227a4d1a8352dc75/play-services-measurement-19.0.0/AndroidManifest.xml:43:13-69
+161
+162        <meta-data
+162-->[com.google.android.gms:play-services-basement:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/6f6e62d03cb26e0976c00ba1c9c00580/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+163            android:name="com.google.android.gms.version"
+163-->[com.google.android.gms:play-services-basement:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/6f6e62d03cb26e0976c00ba1c9c00580/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
+164            android:value="@integer/google_play_services_version" />
+164-->[com.google.android.gms:play-services-basement:17.1.0] /Users/leolo/.gradle/caches/transforms-2/files-2.1/6f6e62d03cb26e0976c00ba1c9c00580/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+165    </application>
+166
+167</manifest>
